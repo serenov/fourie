@@ -50,7 +50,7 @@ function draw(){
   angle -= interval;
 }
 
-function drawFor(initp = HALF_PI, xprev = 200, yprev = 500){
+function drawFor(initp = HALF_PI, xprev = 200, yprev = 400){
 
   let freqbin = initp? Ybin: Xbin;
   let radiusp = 0;  
