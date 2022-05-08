@@ -1,7 +1,7 @@
 let pathx = [];
 let pathy = [];
 let Xbin = [];
-let Ynin = [];
+let Ybin = [];
 let ys = [];
 let angle = 0;
 
@@ -28,7 +28,7 @@ function draw(){
   background(0);
   
   let Y = drawFor();
-  let X = drawFor(0, 400, 100)
+  let X = drawFor(0, 500, 200)
   
   ys.unshift([X[0], Y[1]]);
   
@@ -39,7 +39,7 @@ function draw(){
   noFill();
   stroke(255)
   for(var i = 0; i < ys.length; i++){
-    stroke('yellow');
+    stroke('white');
     vertex(ys[i][0], ys[i][1]);
   }
   endShape();
@@ -50,7 +50,7 @@ function draw(){
   angle -= interval;
 }
 
-function drawFor(initp = HALF_PI, xprev = 200, yprev = 400){
+function drawFor(initp = HALF_PI, xprev = 200, yprev = 500){
 
   let freqbin = initp? Ybin: Xbin;
   let radiusp = 0;  
