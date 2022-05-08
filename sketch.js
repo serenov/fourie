@@ -28,7 +28,7 @@ function draw(){
   background(0);
   
   let Y = drawFor();
-  let X = drawFor(0, 300, 150)
+  let X = drawFor(0, 400, 250)
   
   ys.unshift([X[0], Y[1]]);
   
@@ -50,7 +50,7 @@ function draw(){
   angle -= interval;
 }
 
-function drawFor(initp = HALF_PI, xprev = 150, yprev = 400){
+function drawFor(initp = HALF_PI, xprev = 200, yprev = 500){
 
   let freqbin = initp? Ybin: Xbin;
   let radiusp = 0;  
