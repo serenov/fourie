@@ -8,7 +8,7 @@ let angle = 0;
 function setup() {
   createCanvas(1000, 1000);
   
-  for(var i = 0; i < drawing.length; i = i + 8){
+  for(var i = 0; i < drawing.length; i = i + 4){
     pathx.push(drawing[i].x);
     pathy.push(drawing[i].y);
   }
