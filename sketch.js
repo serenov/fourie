@@ -8,7 +8,7 @@ let angle = 0;
 function setup() {
   createCanvas(1000, 1000);
   
-  for(var i = 0; i < drawing.length; i = i + 4){
+  for(var i = 0; i < drawing.length; i = i + 2){
     pathx.push(drawing[i].x);
     pathy.push(drawing[i].y);
   }
@@ -28,7 +28,7 @@ function draw(){
   background(0);
   
   let Y = drawFor();
-  let X = drawFor(0, 500, 200)
+  let X = drawFor(0, 600, 300)
   
   ys.unshift([X[0], Y[1]]);
   
@@ -50,7 +50,7 @@ function draw(){
   angle -= interval;
 }
 
-function drawFor(initp = HALF_PI, xprev = 200, yprev = 500){
+function drawFor(initp = HALF_PI, xprev = 300, yprev = 500){
 
   let freqbin = initp? Ybin: Xbin;
   let radiusp = 0;  
